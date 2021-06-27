@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>family book</title>
+    </head>
+    <body>
+        <center>
+            <h1 style="color: rgb(162, 0, 255); text-align: center;">
+            My family book
+        </h1>
+        <img src="https://st3.depositphotos.com/15985744/18383/v/600/depositphotos_183839464-stock-illustration-vector-set-characters-flat-style.jpg"
+        style="width: 30%; height: 30%; text-align: center;" id="family_member_image">
+
+        <h4 id="family_member_text"></h4>
+        <button type="button" onclick="nextslide()"> Next </button>
+    </center>
+    <script>
+    var images=
+    ["https://us.123rf.com/450wm/kakigori/kakigori1903/kakigori190300038/121617430-extended-family-sitting-on-couch-smiling-happy-together.jpg?ver=6",
+     "https://i.pinimg.com/originals/00/67/8c/00678c2b5ed4661958f5437f0f8f0513.jpg",
+     "https://image.freepik.com/free-vector/big-family-garden_1308-25341.jpg",
+     "https://i.pinimg.com/originals/00/67/8c/00678c2b5ed4661958f5437f0f8f0513.jpg",];
+
+     var names=
+     ["Family book", "Ranbir singh", "Rocky singh", "Soni singh"];
+
+     var i = 0;
+     function nextslide(){
+        
+        i++
+        var number_of_family_in_array = 5
+        if (i > number_of_family_in_array)
+       {
+       var i = 0;
+       }
+       var updatedImage = images[i];
+       var updatedName = names[1];
+       document.getElementById("family_member_image").src = updatedImage;
+       document.getElementById("family_member_name").innerHTML = updatedName;
+     }
+    </script>
+        </body>
+</html>
